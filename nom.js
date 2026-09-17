@@ -1,10 +1,11 @@
 const prompt = require('prompt-sync')();
 let nom = prompt("Entrer votre nom: ")
 let prenom = prompt("Entrer votre prénom: ")
-let age = prompt("Entrer votre age: ")
+var age = prompt("Entrer votre age: ")
 age = String(age)
 while (age <= 0){
  console.log("Invalid age")
+ var age = prompt("Enter a valid age: ")
  if (age > 0){
    break
 }}
